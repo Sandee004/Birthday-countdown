@@ -14,9 +14,10 @@ body {
     width: 900px;
     height: 500px;
    /* background-color: darkred;
-   background-image: url('/storage/emulated/0/Download/marek-piwnicki-zY9dFp162oA-unsplash.jpg');*/
-   background-image: url('/storage/emulated/0/Download/tim-depickere-1jb-wUO1IhU-unsplash.jpg');
+   background-image: url('/storage/emulated/0/Download/marek-piwnicki-zY9dFp162oA-unsplash.jpg');
+   background-image: url('/storage/emulated/0/Download/tim-depickere-1jb-wUO1IhU-unsplash.jpg');*/
     margin: auto auto;
+    background-color: #87CEEB;
 }
 .band, #band{
     background-color: red;
