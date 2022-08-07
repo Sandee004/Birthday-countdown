@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Countdown</title>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" userscalable="no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+</style>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    
+    <div class="frame">
+    <div class="band"></div>
+        <p class="count">
+            Countdown
+        </p>
+        <p class="welcome">
+            Welcome to Countdown
+        </p>
+        <p class="d-day">
+            October 21st
+        </p>
+
+        <div id="data">
+            <div class="one">
+                <p id="days">
+                    
+                </p>
+                <p class="name">
+                    days
+                </p>
+            </div>
+
+            <div class="two">
+                <p id="hours">
+                    
+                </p>
+                <p class="name">
+                    hours
+                </p>
+            </div>
+
+            <div class="three">
+                <p id="mins">
+                    
+                </p>
+                <p class="name">
+                    mins
+                </p>
+            </div>
+
+            <div class="four">
+                <p id="seconds">
+                    
+                </p>
+                <p class="name">
+                    sec
+                </p>
+            </div>
+        </div>
+        <p class="finished"></p>
+        <div id="band"></div>
+    </div>
+    
+    <script>
+        var CountdownDate = new Date ("Oct 21, 2022 00:00:00").getTime();
+
+        var myfunc = setInterval(function() {
+            var now = new Date().getTime()
+
+            var distance = CountdownDate - now;
+
+            var days = Math.floor(distance /(1000*60*60*24))
+
+            var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60))
+
+            var mins = Math.floor((distance % (1000*60*60))/(1000*60))
+
+            var seconds = Math.floor((distance % (1000*60))/(1000))
+
+            document.getElementById("days").innerHTML = days
+            document.getElementById("hours").innerHTML = hours
+            document.getElementById("mins").innerHTML = mins
+            document.getElementById("seconds").innerHTML = seconds
+
+
+            if (distance < 0) {
+                clearInterval(myfunc);
+                document.getElementById("finished").innerHTML = "Happy Birthdy Babyyy!!!";
+                document.getElementById("data").style.display="none";
+                document.getElementById("band").style.marginTop= "0px"
+            }
+        }, 1000);
+    </script>
+</body>
+</body>
