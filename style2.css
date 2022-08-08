@@ -2,25 +2,19 @@
     margin: 0;
 }
 body {
-    background-color: wheat; /*#256D85;*/
-   /* border: 2px solid black;
-    width: 1000px;
-    height: 700px;*/
-    margin: 50px auto;
+    background-color: ghostwhite;
+    margin: 350px auto;
     display: block;
     vertical-align: middle;
 }
 .frame{
     width: 900px;
     height: 500px;
-   /* background-color: darkred;
-   background-image: url('/storage/emulated/0/Download/marek-piwnicki-zY9dFp162oA-unsplash.jpg');
-   background-image: url('/storage/emulated/0/Download/tim-depickere-1jb-wUO1IhU-unsplash.jpg');*/
+   background-color: #023047;
     margin: auto auto;
-    background-color: #87CEEB;
 }
 .band, #band{
-    background-color: red;
+    background-color: #FFB703/**/;
     height: 30px;
 }
 #band{
@@ -30,18 +24,18 @@ body {
     font-weight: 700;
     margin: 20px 0 30px 20px;
     font-size: 20px;
-    color: black;
+    color: #8ECAE6;
     font-family: 'Roboto Mono', monospace;
 }
 .welcome{
     text-align: center;
     font-size: 37px;
     font-weight: 600;
-    color: red;
+    color: #FFB703;
 }
 .d-day{
     font-size: 30px;
-    color: black;
+    color: #8ECAE6;
     text-align: center;
     margin-bottom: 80px;
     font-family: 'Roboto Mono', monospace;
@@ -59,18 +53,19 @@ body {
 #days, #hours, #mins, #seconds{
     font-size: 60px;
     font-weight: 900;
-    color: wheat;
+    color: #FB8500;
 }
 .name{
     font-weight: 500;
     font-size: 28px;
     margin-bottom: 105px;
+    color: #8ECAE6;
 }
 .finished{
     font-size: 60px;
     text-align: center;
     font-weight: 600;
-    color: darkred;
+    color: #FB8500;
     animation-name: finale;
     animation-iteration-count: 1;
     animation-timing-function: linear;
