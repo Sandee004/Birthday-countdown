@@ -10,7 +10,7 @@ body {
 .frame{
     width: 900px;
     height: 500px;
-   background-color: #023047;
+   background-color: #2b2d42;
     margin: auto auto;
 }
 .band, #band{
@@ -24,18 +24,18 @@ body {
     font-weight: 700;
     margin: 20px 0 30px 20px;
     font-size: 20px;
-    color: #8ECAE6;
+    color: #8D99AE;
     font-family: 'Roboto Mono', monospace;
 }
 .welcome{
     text-align: center;
     font-size: 37px;
     font-weight: 600;
-    color: #FFB703;
+    color: #D90429;
 }
 .d-day{
     font-size: 30px;
-    color: #8ECAE6;
+    color: #8D99AE;
     text-align: center;
     margin-bottom: 80px;
     font-family: 'Roboto Mono', monospace;
@@ -53,13 +53,13 @@ body {
 #days, #hours, #mins, #seconds{
     font-size: 60px;
     font-weight: 900;
-    color: #FB8500;
+    color: #D90429;
 }
 .name{
     font-weight: 500;
     font-size: 28px;
     margin-bottom: 105px;
-    color: #8ECAE6;
+    color: #EDF2F4;
 }
 .finished{
     font-size: 60px;
